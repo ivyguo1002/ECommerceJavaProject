@@ -26,21 +26,7 @@ import java.util.Properties;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.numberOfWindowsToBe;
 
-public class Tests {
-    private WebDriver driver;
-    private Properties prop;
-
-    @BeforeMethod
-    public void setUp() throws IOException {
-        prop = System.getProperties();
-        prop.load(new FileInputStream("resources/config.properties"));
-        FirefoxProfile profile = new FirefoxProfile();
-        profile.setPreference("intl.accept_languages", "en,en-US");
-        FirefoxOptions firefoxOptions = new FirefoxOptions();
-        firefoxOptions.setProfile(profile);
-        driver = new FirefoxDriver(firefoxOptions);
-    }
-
+public class Tests extends BaseTest {
     @Test
     public void productAddedToCartShouldNotBeMoreThanTheAvailableAmount() {
         driver.get(prop.getProperty("homepage"));
@@ -86,9 +72,4 @@ public class Tests {
         }
     }
 
-
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
-    }
 }

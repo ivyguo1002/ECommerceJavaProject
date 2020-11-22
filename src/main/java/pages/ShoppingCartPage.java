@@ -15,6 +15,8 @@ public class ShoppingCartPage {
     WebElement updateBtn;
     @FindBy(css = ".error")
     WebElement itemMsg;
+    @FindBy(css=".btn-checkout")
+    WebElement proceedToCheckout;
 
     public ShoppingCartPage(WebDriver driver) {
             this.driver = driver;
@@ -32,5 +34,10 @@ public class ShoppingCartPage {
 
     public String getItemMsg(){
         return itemMsg.getText();
+    }
+
+    public CheckoutPage goToCheckout() {
+        proceedToCheckout.click();
+        return new CheckoutPage(driver);
     }
 }

@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-20T23:45:05 NZDT" name="Default suite" finished-at="2020-11-20T23:45:58 NZDT" duration-ms="52603">
+  <suite started-at="2020-11-23T10:13:32 NZDT" name="Default suite" finished-at="2020-11-23T10:14:14 NZDT" duration-ms="42558">
     <groups>
     </groups>
-    <test started-at="2020-11-20T23:45:05 NZDT" name="Default test" finished-at="2020-11-20T23:45:58 NZDT" duration-ms="52603">
-      <class name="testcases.Tests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.Tests@13b13b5d]" started-at="2020-11-20T23:45:05 NZDT" name="setUp" finished-at="2020-11-20T23:45:13 NZDT" duration-ms="7533" status="PASS">
+    <test started-at="2020-11-23T10:13:32 NZDT" name="Default test" finished-at="2020-11-23T10:14:14 NZDT" duration-ms="42558">
+      <class name="testcases.Task6">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.Task6@34f7cfd9]" started-at="2020-11-23T10:13:33 NZDT" name="setUp" finished-at="2020-11-23T10:13:42 NZDT" duration-ms="9622" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="userShouldBeAbleToCompareTwoProducts()[pri:0, instance:testcases.Tests@13b13b5d]" started-at="2020-11-20T23:45:13 NZDT" name="userShouldBeAbleToCompareTwoProducts" finished-at="2020-11-20T23:45:55 NZDT" duration-ms="42210" status="PASS">
+        <test-method signature="UserShouldBeAbleToPurchaseProduct(java.lang.String, java.lang.String)[pri:0, instance:testcases.Task6@34f7cfd9]" started-at="2020-11-23T10:13:42 NZDT" name="UserShouldBeAbleToPurchaseProduct" data-provider="testdata" finished-at="2020-11-23T10:14:11 NZDT" duration-ms="29113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fakeUser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userShouldBeAbleToCompareTwoProducts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Tests@13b13b5d]" started-at="2020-11-20T23:45:55 NZDT" name="tearDown" finished-at="2020-11-20T23:45:58 NZDT" duration-ms="2780" status="PASS">
+        </test-method> <!-- UserShouldBeAbleToPurchaseProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Task6@34f7cfd9]" started-at="2020-11-23T10:14:11 NZDT" name="tearDown" finished-at="2020-11-23T10:14:14 NZDT" duration-ms="2666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.Tests -->
+      </class> <!-- testcases.Task6 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

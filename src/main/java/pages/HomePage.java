@@ -11,6 +11,10 @@ public class HomePage {
     private WebDriver driver;
     @FindBy(xpath="//a[contains(., 'Mobile')]")
     WebElement mobileMenu;
+    @FindBy(css = ".skip-account")
+    WebElement accountLink;
+    @FindBy(css = "a[title='My Account']")
+    WebElement myAccountLink;
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
@@ -21,5 +25,11 @@ public class HomePage {
     public MobilePage navigateToMobilePage() {
         mobileMenu.click();
         return new MobilePage(driver);
+    }
+
+    public LoginPage goToLoginPage() {
+        accountLink.click();
+        myAccountLink.click();
+        return new LoginPage(driver);
     }
 }
